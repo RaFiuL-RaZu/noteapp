@@ -14,7 +14,7 @@ class NoteApp extends StatelessWidget {
       backgroundColor: Color(0xff05081C),
       appBar: AppBar(
         backgroundColor:Color(0xff05081C),
-        title: CustomTextWidget(title: "Notes", fSize:26,color: Colors.white,),
+        title: CustomTextWidget(title: "Notes", fSize:28,color: Colors.white,fWeight: FontWeight.w700,),
         centerTitle: true,
         actions: [
           Padding(
@@ -39,6 +39,7 @@ class NoteApp extends StatelessWidget {
                       crossAxisCount: 2,
                     crossAxisSpacing: 5,
                     mainAxisSpacing: 5,
+                    childAspectRatio: 0.85
                   ),
                   itemBuilder: (context,index)=>CustomCard()),
             )

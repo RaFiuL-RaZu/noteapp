@@ -28,7 +28,7 @@ class CustomTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(title,style: TextStyle(fontSize:fSize,fontWeight:fWeight,color: color),);
+    return Text(title,maxLines: 5,style: TextStyle(fontSize:fSize,fontWeight:fWeight,color: color),);
   }
 }
 
